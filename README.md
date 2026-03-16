@@ -19,9 +19,9 @@ Tableau Public link: https://public.tableau.com/app/profile/andr.s.lill8311/viz/
                      
                      
 **Views:**
-- **Suitability Window (Heatmap)** — continuous suitability score (0–1) across 12 months for a selected city
-- **Season Bar** — binary active/inactive months based on a user-defined threshold
-- **Compare Panel** — season length rank among all cities for the selected species and threshold
+- **Suitability Window (Heatmap)**: Continuous suitability score (0–1) across 12 months for a selected city
+- **Season Bar**: Binary active/inactive months based on a user-defined threshold
+- **Compare Panel**: Season length rank among all cities for the selected species and threshold
 
 **Controls:**
 - City dropdown
