@@ -19,7 +19,7 @@ Given a city's typical monthly climate, which months are most suitable for mosqu
 
 Tableau Public dashboard: [When is mosquito season in your city?](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)                     
 
----
+
 
 **Views:**
 - **Suitability Window (Heatmap)**: Continuous suitability score (0–1) across 12 months for a selected city
