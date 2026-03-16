@@ -17,10 +17,7 @@ A model of **climate-based suitability for mosquito activity** across 1,421 citi
 
 Tableau Public dashboard: [When is mosquito season in your city?](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)                     
 
-🔗 **[Tableau Public Dashboard](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)**
 
-Tableau Public dashboard: **[View the dashboard →](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)**
-                     
 **Views:**
 - **Suitability Window (Heatmap)**: Continuous suitability score (0–1) across 12 months for a selected city
 - **Season Bar**: Binary active/inactive months based on a user-defined threshold
