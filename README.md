@@ -7,7 +7,7 @@
 
 ## Overview
 
-“1,421 cities × 12 months × 2 species = 34,104 monthly suitability estimates (1991–2020 normals).”
+1,421 cities × 12 months × 2 species = 34,104 monthly suitability estimates (1991–2020 normals).
 
 A model of **climate-based suitability for mosquito activity** across 1,421 cities worldwide, covering two *Aedes* species and cities with populations ≥ 500,000. The central question: given a city's typical monthly climate, which months are most suitable for mosquito activity?
 
