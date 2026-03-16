@@ -120,6 +120,7 @@ Precipitation is included as contextual information only and does not contribute
 1. Open `mosquito_suitability_pipeline.ipynb` in Google Colab
 2. Update the file paths in the CONFIG section (Section 2 and Section 4) to match your local environment or Google Drive mount point
 3. Run all cells sequentially (note: ERA5 data is returned in Kelvin and m/day. Unit conversion is handled in the notebook)
+4. The pipeline generates a Tableau-ready CSV (city × month). For size reasons it isn’t tracked in Git. It is uploaded directly to Tableau Public    as the dashboard data source.
 
 ---
 
