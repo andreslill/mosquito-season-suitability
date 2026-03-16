@@ -145,7 +145,7 @@ across the continent (Simonin 2025).
 
 - **Climate normals (1991–2020):** Recent warming trends may shift actual suitability windows. A natural next step would be to compare 1991–2020 vs. 2001–2030 normals.
 - **City size threshold:** Only cities with populations ≥ 500,000 are included. 
-  Smaller cities with known vector presence, such as Madeira (Ae. aegypti) 
+  Smaller cities with known vector presence, such as Madeira (*Ae. aegypti*), 
   are not represented.
 - **Photoperiod (albopictus):** Currently applied as a temperate-only modifier. A finer latitude-based gradation could be explored.
 - **Presence data:** A future version could overlay occurrence records (e.g. Kraemer et al., Mosquito Alert) to distinguish climate suitability from confirmed presence.
