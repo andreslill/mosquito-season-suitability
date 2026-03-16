@@ -26,7 +26,7 @@ Tableau Public link: https://public.tableau.com/app/profile/andr.s.lill8311/viz/
 **Controls:**
 - City dropdown
 - Species: *Ae. aegypti* / *Ae. albopictus*
-- Season threshold: 0.2 (Early warning) / 0.3 (Moderate) / 0.4 (Peak only)
+- Season threshold: 0.2 (Early) / 0.3 (Moderate) / 0.4 (Strict)
 
 ---
 
