@@ -15,17 +15,18 @@ A model of **climate-based suitability for mosquito activity** across 1,421 citi
 
 ## Dashboard
 
-→ *Tableau Public link (to be added after publication)*
-
+Tableau Public link: https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes 
+                     
+                     
 **Views:**
-- **Risk Window (Heatmap)** — continuous suitability score (0–1) across 12 months for a selected city
+- **Suitability Window (Heatmap)** — continuous suitability score (0–1) across 12 months for a selected city
 - **Season Bar** — binary active/inactive months based on a user-defined threshold
 - **Compare Panel** — season length rank among all cities for the selected species and threshold
 
 **Controls:**
 - City dropdown
 - Species: *Ae. aegypti* / *Ae. albopictus*
-- Season threshold: 0.2 (Early warning) / 0.3 (Moderate) / 0.4 (Peak only)
+- Season threshold: 0.2 (Early) / 0.3 (Moderate) / 0.4 (Strict)
 
 ---
 
@@ -45,8 +46,8 @@ A model of **climate-based suitability for mosquito activity** across 1,421 citi
 Suitability is a multiplicative score (0–1):
 
 ```
-Risk Score (aegypti)    = TempScore × VPDScore
-Risk Score (albopictus) = TempScore × VPDScore × PhotoFactor*
+Suitability Score (aegypti)    = TempScore × VPDScore
+Suitability Score (albopictus) = TempScore × VPDScore × PhotoFactor*
 
 *PhotoFactor applied only outside the tropics (|lat| ≥ 23.5°)
 ```
@@ -97,7 +98,7 @@ Precipitation is included as contextual information only and does not contribute
 ## Repository Structure
 
 ```
-├── mosquito_risk_pipeline.ipynb   # Main pipeline (Google Colab)
+├── mosquito_suitability_pipeline.ipynb   # Main pipeline (Google Colab)
 ├── requirements.txt
 └── README.md
 ```
@@ -113,7 +114,7 @@ Precipitation is included as contextual information only and does not contribute
 3. Download `reanalysis-era5-single-levels-monthly-means`, variables: `2m_temperature`, `2m_dewpoint_temperature`, `total_precipitation`, period 1991–2020
 
 **Run:**
-1. Open `mosquito_risk_pipeline.ipynb` in Google Colab
+1. Open `mosquito_suitability_pipeline.ipynb` in Google Colab
 2. Update the file paths in the CONFIG section (Section 2 and Section 4) to match your local environment or Google Drive mount point
 3. Run all cells sequentially (note: ERA5 data is returned in Kelvin and m/day. Unit conversion is handled in the notebook)
 
@@ -144,7 +145,7 @@ across the continent (Simonin 2025).
 
 - **Climate normals (1991–2020):** Recent warming trends may shift actual suitability windows. A natural next step would be to compare 1991–2020 vs. 2001–2030 normals.
 - **City size threshold:** Only cities with populations ≥ 500,000 are included. 
-  Smaller cities with known vector presence, such as Madeira (Ae. aegypti) 
+  Smaller cities with known vector presence, such as Madeira (*Ae. aegypti*), 
   are not represented.
 - **Photoperiod (albopictus):** Currently applied as a temperate-only modifier. A finer latitude-based gradation could be explored.
 - **Presence data:** A future version could overlay occurrence records (e.g. Kraemer et al., Mosquito Alert) to distinguish climate suitability from confirmed presence.
