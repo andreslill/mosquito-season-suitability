@@ -98,7 +98,7 @@ Precipitation is included as contextual information only and does not contribute
 ## Repository Structure
 
 ```
-├── mosquito_risk_pipeline.ipynb   # Main pipeline (Google Colab)
+├── mosquito_suitability_pipeline.ipynb   # Main pipeline (Google Colab)
 ├── requirements.txt
 └── README.md
 ```
@@ -114,7 +114,7 @@ Precipitation is included as contextual information only and does not contribute
 3. Download `reanalysis-era5-single-levels-monthly-means`, variables: `2m_temperature`, `2m_dewpoint_temperature`, `total_precipitation`, period 1991–2020
 
 **Run:**
-1. Open `mosquito_risk_pipeline.ipynb` in Google Colab
+1. Open `mosquito_suitability_pipeline.ipynb` in Google Colab
 2. Update the file paths in the CONFIG section (Section 2 and Section 4) to match your local environment or Google Drive mount point
 3. Run all cells sequentially (note: ERA5 data is returned in Kelvin and m/day. Unit conversion is handled in the notebook)
 
