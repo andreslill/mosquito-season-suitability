@@ -27,7 +27,8 @@ Which months are most suitable for mosquito activity, given a city's typical cli
 - **Season Bar**: Binary active/inactive months based on a user-defined threshold
 - **Suitability Window (Heatmap)**: Continuous suitability score (0–1) across 12 months
 - **Season Map**: World map showing which cities are in season for the selected month and species
-- **Cities at similar latitudes**: Season length comparison with cities in the same latitude band
+- **Monthly suitability profile**: Monthly suitability score for the selected city
+  vs. Top 10 cities at similar latitudes,  with a dynamic season threshold reference line
 - **Cities same country**: Season length comparison with cities in the same country
 
 **Controls:**
