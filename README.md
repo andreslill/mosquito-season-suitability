@@ -95,12 +95,17 @@ Precipitation is included as contextual information only and does not contribute
 
 | Dataset | Source | Notes |
 |---|---|---|
-| Climate normals | ERA5 monthly means, Copernicus CDS | 1991–2020 (WMO standard period) |
-| City list | SimpleMaps World Cities (basic v1.901) | Filtered: population ≥ 500,000 |
-| Temperature parameters | Doeurk et al. 2025 | Adult survival curve |
+| Climate normals | ERA5 monthly means, [Copernicus CDS](https://cds.climate.copernicus.eu) | 1991–2020 (WMO standard period) |
+| City list | [SimpleMaps World Cities Basic v1.901](https://simplemaps.com/data/world-cities) | Filtered: population ≥ 500,000. License: CC BY 4.0 |
+| Elevation | [Open-Elevation API](https://open-elevation.com) | City-level, metres above sea level |
+
+## Model Parameters
+
+| Parameter | Source | Notes |
+|---|---|---|
+| Temperature suitability | Doeurk et al. 2025 | Adult survival curve |
 | VPD linearization | Schmidt et al. 2018 | |
 | Photoperiod gate | Lacour et al. 2015 | Temperate *Ae. albopictus* populations |
-
 ---
 
 ## Repository Structure
