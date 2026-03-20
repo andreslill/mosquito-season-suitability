@@ -124,7 +124,9 @@ Precipitation is included as contextual information only and does not contribute
 
 ## Reproducing the Data Pipeline
 
-**Requirements:** Python 3.10+, and the following packages: `numpy`, `pandas`, `xarray`, `tqdm`, plus CDS API access
+**Requirements:** Python 3.10+, and the following packages: `numpy`, `pandas`, `xarray`, `tqdm`, plus CDS API access.
+
+The processed output (mosquito_suitability.csv) is included in the repository. Running the full pipeline is only necessary if you want to reproduce or modify the data processing steps.
 
 **ERA5 download:**
 1. Register at [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu)
