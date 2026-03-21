@@ -157,7 +157,7 @@ One limitation worth noting: the temperature optimum used here (Topt = 24.5°C) 
 
 ### Validation against Kraemer et al. occurrence records
 
-To test whether the suitability model assigns higher scores to cities with confirmed mosquito presence, suitability metrics were compared against occurrence records from Kraemer et al. (2015,2017), a global compendium of 42,066 *Ae. aegypti* and *Ae. albopictus* records compiled from peer reviewed literature and national entomological surveys between 1958 and 2014. For each city, a presence label was assigned where at least one point record fell within 50 km.
+To test whether the suitability model assigns higher scores to cities with confirmed mosquito presence, suitability metrics were compared against occurrence records from Kraemer et al. (2015), a global compendium of 42,066 *Ae. aegypti* and *Ae. albopictus* records compiled from peer reviewed literature and national entomological surveys between 1958 and 2014. For each city, a presence label was assigned where at least one point record fell within 50 km.
 
 Cities near confirmed occurrence records showed systematically higher suitability scores than absence-labelled cities across both species. Season length was the strongest discriminator, with AUC values between 0.72 and 0.83 depending on species and threshold. Results were stable across matching radii from 25 to 150 km, supporting the robustness of the model.
 
