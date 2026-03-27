@@ -78,10 +78,10 @@ Linearized vapour pressure deficit (VPD) suitability based on Schmidt et al. 201
 
 VPD is derived from ERA5 temperature and dewpoint using the Magnus approximation.
 
-### Photoperiod (PhotoFactor — *Ae. albopictus* only)
+### Photoperiod (PhotoFactor • *Ae. albopictus* only)
 Applied **only outside the tropics (|lat| ≥ 23.5°)** as a proxy for diapause pressure. In tropical/subtropical latitudes, daylength is less seasonal and diapause is not a dominant driver, so PhotoFactor = 1.0 there.
 
-Outside the tropics (Lacour et al. 2015; Medlock et al. 2006):
+Outside the tropics (Medlock et al. 2006; Lacour et al. 2015):
 - Daylength < 11.25h → 0.0
 - 11.25–13.5h → 0.5
 - ≥ 13.5h → 1.0
