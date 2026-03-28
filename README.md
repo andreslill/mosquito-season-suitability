@@ -8,6 +8,7 @@
 [![Notebook](https://img.shields.io/badge/notebook-validation-blueviolet.svg)](./notebooks/methodology_and_validation.ipynb)
 
 The validation notebook documents the external comparison against Kraemer et al. (2015) occurrence records, including Mann-Whitney U, Cohen's d, and ROC/AUC analysis.
+
 ---
 
 ## Overview
