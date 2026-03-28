@@ -101,11 +101,12 @@ Precipitation is included as contextual information only and does not contribute
 
 ## Data Sources
 
-| Dataset | Source | Notes |
-|---|---|---|
-| Climate normals | ERA5 monthly means [Copernicus CDS](https://cds.climate.copernicus.eu) | 1991–2020 (WMO standard period) |
-| City list | [SimpleMaps World Cities Basic v1.901](https://simplemaps.com/data/world-cities) | Filtered: population ≥ 500,000. License: CC BY 4.0 |
-| Elevation | [Open-Elevation API](https://open-elevation.com) | City-level, metres above sea level |
+| Dataset | Source | Period | Notes |
+|---|---|---|---|
+| Climate normals | ERA5 monthly means [Hersbach et al. 2023](https://doi.org/10.24381/cds.f17050d7) | 1991–2020 | WMO standard period |
+| City list | [SimpleMaps World Cities Basic v1.901](https://simplemaps.com/data/world-cities) | 2024 | Filtered: population ≥ 500,000. License: CC BY 4.0 |
+| Elevation | [Open-Elevation API](https://open-elevation.com) | — | City-level, metres above sea level |
+
 
 ## Model Parameters
 
@@ -202,11 +203,13 @@ across the continent (Simonin 2025).
 
 >Bonizzoni M, et al. The invasive mosquito species Aedes albopictus: current knowledge and future perspectives. Trends Parasitol. 2013; 29(9):460–468. https://doi.org/10.1016/j.pt.2013.07.003
 
->Copernicus Climate Change Service, Climate Data Store, (2019): Climatic suitability for the presence and seasonal activity of the Aedes albopictus mosquito for Europe derived from climate projections. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). https://doi.org/10.24381/cds.d08ed09a
+>Copernicus Climate Change Service (C3S) Climate Data Store (CDS). (2019). Climatic suitability for the presence and seasonal activity of the Aedes albopictus mosquito for Europe derived from climate projections. [https://doi.org/10.24381/cds.d08ed09a](https://doi.org/10.24381/cds.d08ed09a)
 
 >Dávalos-Becerril E, et al. Urban and semi-urban mosquitoes of Mexico City: A risk for endemic mosquito-borne disease transmission. PLOS ONE 2019; 14(3): e0212987. https://doi.org/10.1371/journal.pone.0212987
 
 >Doeurk S, et al. Impact of temperature on survival, development and longevity of Ae. aegypti and Ae. albopictus. Parasites & Vectors 2025; 18:362. https://doi.org/10.1186/s13071-025-06892-y
+
+>Hersbach, H., et al. (2023). ERA5 monthly averaged data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). https://doi.org/10.24381/cds.f17050d7
 
 >Kraemer MUG, et al. The global compendium of Aedes aegypti and Ae. albopictus occurrence. Sci Data 2015; 2:150035. https://doi.org/10.1038/sdata.2015.35
 
@@ -216,11 +219,14 @@ across the continent (Simonin 2025).
 
 >Lozano-Fuentes S, et al. The dengue virus mosquito vector Aedes aegypti at high elevation in México. American Journal of Tropical Medicine and Hygiene 2012; 87(5):902–909. https://doi.org/10.4269/ajtmh.2012.12-0244
 
->Medlock JM, et al. Analysis of the potential for survival and seasonal activity of Aedes albopictus (Diptera: Culicidae) in the United Kingdom. Journal of Vector Ecology 2006; 31(2):292–304. https://doi.org/10.3376/1081-1710(2006)31[292:AOTPFS]2.0.CO;2
+>Medlock JM, et al. Analysis of the potential for survival and seasonal activity of Aedes albopictus (Diptera: Culicidae) in the United Kingdom. Journal of Vector Ecology 2006; 31(2):292–304. [https://doi.org/10.3376/1081-1710(2006)31[292:AOTPFS]2.0.CO;2]
 
 >Mordecai EA, et al. Detecting the impact of temperature on transmission of Zika, dengue, and chikungunya using mechanistic models. PLOS Neglected Tropical Diseases 2017; 11(4): e0005568. https://doi.org/10.1371/journal.pntd.0005568
 
 >Ortega-Morales AI, et al. Update on the dispersal of Aedes albopictus in Mexico: 1988–2021. Frontiers in Tropical Diseases 2022; 2:814205. https://doi.org/10.3389/fitd.2021.814205
+
+>Pareto Software, LLC. 2024. SimpleMaps World Cities Database, Basic v1.901.
+https://simplemaps.com/data/world-cities. CC BY 4.0.
 
 >Schmidt CA, et al. Effects of desiccation stress on adult female longevity in Ae. aegypti and Ae. albopictus. Parasites & Vectors 2018; 11:267. https://doi.org/10.1186/s13071-018-2808-6
 
