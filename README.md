@@ -103,7 +103,7 @@ Precipitation is included as contextual information only and does not contribute
 
 | Dataset | Source | Period | Notes |
 |---|---|---|---|
-| Climate normals | ERA5 monthly means  [Hersbach et al. 2023](https://doi.org/10.24381/cds.f17050d7) | 1991–2020 | WMO standard period |
+| Climate normals | ERA5 monthly means [Hersbach et al. 2023](https://doi.org/10.24381/cds.f17050d7) | 1991–2020 | WMO standard period |
 | City list | [SimpleMaps World Cities Basic v1.901](https://simplemaps.com/data/world-cities) | 2024 | Filtered: population ≥ 500,000. License: CC BY 4.0 |
 | Elevation | [Open-Elevation API](https://open-elevation.com) | — | City-level, metres above sea level |
 
