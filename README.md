@@ -457,7 +457,7 @@ across the continent (Simonin 2025).
 
 - **Climate normals (1991–2020):** Recent warming trends may shift actual suitability windows. A natural next step would be to compare 1991–2020 vs. 2001–2030 normals.
 - **City size threshold:** Only cities with populations ≥ 500,000 are included. 
-  Smaller cities with known vector presence, such as Madeira (*Ae. aegypti*), 
+  Smaller cities with known vector presence, such as Funchal on the island of Madeira (*Ae. aegypti*), 
   are not represented.
 - **Spatial resolution:** Suitability is modelled for individual cities, not across continuous space. This makes exposed-population estimates methodologically unsound at the city level. Meaningful exposure analysis would require gridded population data (e.g. GHS-POP) combined with spatially continuous suitability fields, which lies beyond the scope of the current dataset.
 - **Suitability scores reflect climate conditions, not confirmed presence.** Thermal and humidity constraints are captured, but biotic factors such as prior establishment, competitive dynamics, or human-mediated introduction are not. Where temperatures approach the lower thermal threshold, occurrence records can diverge substantially from climate predictions, as documented for example in Mexico City (~2,242 m), where *Ae. aegypti* persists despite conditions near its thermal minimum (Doeurk et al. 2025; Lozano-Fuentes et al. 2012; Dávalos-Becerril et al. 2019; Ortega-Morales et al. 2022).
