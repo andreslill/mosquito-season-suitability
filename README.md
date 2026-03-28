@@ -26,6 +26,7 @@ Which months are most suitable for mosquito activity, given a city's typical cli
 
 🔗 **[Tableau Public Dashboard](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)**
 
+---
 
 ## Views
 - **KPI: Season length**: Number of months above the selected suitability threshold
