@@ -187,7 +187,7 @@ The photoperiod thresholds used here are independently corroborated by the Coper
 
 ## Confirmed distribution in Europe
 
-ECDC surveillance ([June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-aegypti-current-known-distribution-june-2025)) confirms that *Ae. aegypti* is established in Cyprus within the EU (Simonin 2025), and in Madeira (outermost region of Portugal), despite climate suitability extending across parts of southern Europe, highlighting the gap between climate suitability and confirmed presence.
+ECDC surveillance ([June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-aegypti-current-known-distribution-june-2025)) confirms that *Ae. aegypti* is established only in Cyprus within the EU (Simonin 2025), and on the island of Madeira (Portugal), despite climate suitability extending across parts of mainland southern Europe. This highlights the gap between climate suitability and confirmed presence. Neither location is represented in the dashboard as their individual cities fall below the 500,000 population threshold.
 
 *Ae. albopictus*, by contrast, is established in 369 regions across countries within the EU, including Germany ([ECDC, June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-june-2025)), consistent with the broader suitability windows modelled here. The year 2025 marked an 
 unprecedented level of arboviral circulation in Europe, with locally acquired 
