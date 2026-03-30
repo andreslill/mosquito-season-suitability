@@ -24,22 +24,7 @@ Which months are most suitable for mosquito activity, given a city's typical cli
 
 🔗 **[Tableau Public Dashboard](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)**
 
----
-
-## Views
-- **KPI: Season length**: Number of months above the selected suitability threshold
-- **KPI: Peak month**: Month with the highest suitability score for the selected city and species
-- **Season Bar**: Binary active/inactive months based on a user-defined threshold
-- **Suitability Window (Heatmap)**: Continuous suitability score (0–1) across 12 months
-- **Season Map**: World map showing which cities are in season for the selected month and species
-- **Monthly suitability profile**: Monthly suitability score for the selected city vs. the top 10 cities
-  by season length, ties broken by population, at similar latitudes, with a dynamic season threshold reference line
-- **Cities same country**: Season length comparison with cities in the same country
-
-**Controls:**
-- City dropdown
-- Species: *Ae. aegypti* / *Ae. albopictus*
-- Season threshold: 0.2 (Early) / 0.3 (Moderate) / 0.4 (Strict)
+![Dashboard screenshot showing seasonal suitability for Mexico City, Ae. albopictus](./assets/dashboard_screenshot.png)
 
 ---
 
