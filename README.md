@@ -9,6 +9,10 @@
 
 ---
 
+In 2025, Europe recorded simultaneous locally acquired dengue, chikungunya, and West Nile virus transmission for the first time (Simonin 2025; ECDC 2025). *Ae. albopictus* has rapidly expanded into temperate regions over recent decades [Bonizzoni et al. 2013], shifting the key question from **where** climate is suitable to **when** seasonal conditions favour mosquito activity. This project models those seasonal suitability windows for *Ae. aegypti* and *Ae. albopictus* across 1,421 cities worldwide using 1991–2020 climate normals.
+
+---
+
 ## Overview
 
 1,421 cities × 12 months × 2 species = 34,104 monthly suitability estimates.
@@ -78,7 +82,7 @@ cutoff, including cities in the Dengue analysis focus countries Taiwan and Mexic
 In temperate cities, midsummer suitability for *Ae. albopictus* can drop below the season threshold even while temperatures remain high. This reflects two interacting processes: daylength falling below the diapause photoperiod threshold (≈ 13.5 h, Lacour et al. 2015) during late summer, and increased desiccation stress under high VPD. Consequently, in some cities (e.g. Murcia, Athens or Damascus), September can show higher suitability than August, as slightly cooler temperatures nearer the temperature optimum (24.5°C) and recovering humidity together restore conditions above the season threshold.
 
 ### Precipitation
-Precipitation is included as contextual information only and does not contribute to the suitability score. The score is based on temperature suitability and vapour pressure deficit, with an additional photoperiod factor for *Ae. albopictus* outside the tropics.
+Precipitation is shown as contextual information only and does not contribute to the suitability score. The model is based on temperature suitability and VPD, with an additional photoperiod factor for Ae. albopictus at higher latitudes. While precipitation can affect breeding-site availability, this is not modelled here. Both *Ae. aegypti* and *Ae. albopictus* are container breeders and urban populations often rely on anthropogenic water sources, such as flowerpots, construction sites, air-conditioning condensate. A non-linear precipitation term could be added in future work to capture both drought stress and larval flushing at high rainfall.
 
 ---
 

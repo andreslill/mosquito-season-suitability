@@ -1,5 +1,5 @@
 python"""
-Photoperiod Sensitivity Check — sigmoid vs. binary cutoff
+Photoperiod Sensitivity Check: sigmoid vs. binary cutoff
 ==========================================================
 
 Compares the photo factor output of a sigmoid transition function (k=0.5,
