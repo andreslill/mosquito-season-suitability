@@ -170,7 +170,7 @@ The photoperiod thresholds used here are independently corroborated by the Coper
 
 ## Confirmed distribution in Europe
 
-ECDC surveillance ([June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-aegypti-current-known-distribution-june-2025)) confirms that within the EU *Ae. aegypti* is established only in Cyprus (Simonin 2025) and on the island of Madeira (Portugal), despite climate suitability extending across parts of mainland southern Europe. This highlights the gap between climate suitability and confirmed presence. Neither location is represented in the dashboard as their individual cities fall below the 500,000 population threshold.
+ECDC surveillance ([June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-aegypti-current-known-distribution-june-2025)) confirms that within the EU *Ae. aegypti* is established only in Cyprus (Simonin 2025) and on the island of Madeira (Portugal), despite climate suitability extending across parts of mainland southern Europe. Neither location is represented in the dashboard as their individual cities fall below the 500,000 population threshold.
 
 *Ae. albopictus*, by contrast, is established in 369 regions across countries within the EU, including Germany ([ECDC, June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-june-2025)), consistent with the broader suitability windows modelled here. The year 2025 marked an 
 unprecedented level of arboviral circulation in Europe, with locally acquired 
@@ -181,7 +181,7 @@ across the continent (Simonin 2025).
 
 ## Limitations & Next Iterations
 
-- **Climate normals (1991–2020):** Recent warming trends may shift actual suitability windows. A natural next step would be to compare 1991–2020 vs. 2001–2030 normals.
+- **Climate normals (1991–2020):** Recent warming trends may shift actual suitability windows. Comparing 1991–2020 vs. 2001–2030 normals would show whether recent warming has already shifted season boundaries.
 - **City size threshold:** Only cities with populations ≥ 500,000 are included. 
   Smaller cities with known vector presence, such as Funchal (Madeira, *Ae. aegypti*), are not represented.
 - **Spatial resolution:** Suitability is modelled for individual cities, not across continuous space. This makes exposed-population estimates methodologically unsound at the city level. Meaningful exposure analysis would require gridded population data (e.g. GHS-POP) combined with spatially continuous suitability fields, which lies beyond the scope of the current dataset.
