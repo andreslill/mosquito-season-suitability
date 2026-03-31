@@ -67,8 +67,7 @@ VPD is derived from ERA5 temperature and dewpoint using the Magnus approximation
 A sigmoid function (inflection = 23.5°, k = 0.5) weights the Lacour et al. 2015 photoperiod thresholds (11.25 h / 13.5 h) continuously by latitude, producing a 
 ~5° transition zone around the Tropic of Cancer/Capricorn. PhotoFactor approaches 1.0 near the equator and 0.0 at high latitudes in winter.
 
-**Sensitivity analysis:** A latitudinal sensitivity check confirmed that 294 cities across 28 countries showed photo factor changes > 0.1 under the sigmoid vs. a binary 
-cutoff, including cities in the Dengue analysis focus countries Taiwan and Mexico. The sigmoid implementation was selected on this basis.
+**Sensitivity analysis:** A latitudinal sensitivity check confirmed that 294 cities across 28 countries showed photo factor changes > 0.1 under the sigmoid vs. a binary cutoff. The sigmoid implementation was selected on this basis.
 
 In temperate cities, midsummer suitability for *Ae. albopictus* can drop below the season threshold even while temperatures remain high. This reflects two interacting processes: daylength falling below the diapause photoperiod threshold (≈ 13.5 h, Lacour et al. 2015) during late summer, and increased desiccation stress under high VPD. Consequently, in some cities (e.g. Murcia, Athens or Damascus), September can show higher suitability than August, as slightly cooler temperatures nearer the temperature optimum (24.5°C) and recovering humidity together restore conditions above the season threshold.
 
@@ -92,7 +91,7 @@ Precipitation is shown as contextual information only and does not contribute to
 |---|---|---|
 | Temperature suitability | Doeurk et al. 2025 | Female adult survival curve |
 | VPD linearization | Schmidt et al. 2018 | |
-| Photoperiod gate | Lacour et al. 2015; Medlock et al. 2006 | Temperate *Ae. albopictus* populations |
+| Photoperiod gate | Lacour et al. 2015 | Temperate *Ae. albopictus* populations |
 
 ---
 
