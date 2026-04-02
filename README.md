@@ -172,7 +172,7 @@ The photoperiod thresholds used here are independently corroborated by the Coper
 
 ## Confirmed distribution in Europe
 
-ECDC surveillance ([June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-aegypti-current-known-distribution-june-2025)) confirms that within the EU *Ae. aegypti* is established only in Cyprus (Simonin 2025) and on the island of Madeira (Portugal), despite climate suitability extending across parts of mainland southern Europe. Neither location is represented in the dashboard as their individual cities fall below the 500,000 population threshold.
+ECDC surveillance ([June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-aegypti-current-known-distribution-june-2025)) confirms that within the EU *Ae. aegypti* is established only in Cyprus (Simonin 2025) and on the island of Madeira (Portugal), despite climate suitability extending across parts of mainland southern Europe. Both locations fall below 500,000 population but are included as special interest cities with full suitability scores.
 
 *Ae. albopictus*, by contrast, is established in 369 regions across countries within the EU, including Germany ([ECDC, June 2025](https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-june-2025)), consistent with the broader suitability windows modelled here. The year 2025 marked an 
 unprecedented level of arboviral circulation in Europe, with locally acquired 
@@ -184,8 +184,8 @@ across the continent (Simonin 2025).
 ## Limitations & Next Iterations
 
 - **Climate normals (1991–2020):** Recent warming trends may shift actual suitability windows. Comparing 1991–2020 vs. 2001–2030 normals would show whether recent warming has already shifted season boundaries. The 2001–2030 WMO reference period will not be fully available until around 2031. A shorter period such as 2011–2024 would reduce comparability because of unequal period length, while 2001–2024 overlaps with the current baseline by 20 years and would likely limit detection of a meaningful shift.
-- **City size threshold:** Only cities with populations ≥ 500,000 are included. 
-  Smaller cities with known vector presence, such as Funchal (Madeira, *Ae. aegypti*), are not represented.
+- **City size threshold:** Only cities with populations ≥ 500,000 are included in the main pipeline.
+   Funchal (Madeira) and Nicosia (Cyprus), the only two EU territories with confirmed *Ae. aegypti* establishment, are added as special interest cities and appear in the dashboard with full suitability scores.
 - **Spatial resolution:** Suitability is modelled for individual cities, not across continuous space. This makes exposed-population estimates methodologically unsound at the city level. Meaningful exposure analysis would require gridded population data (e.g. GHS-POP) combined with spatially continuous suitability fields, which lies beyond the scope of the current dataset.
 - **Suitability scores reflect climate conditions, not confirmed presence.** Thermal and humidity constraints are captured, but biotic factors such as prior establishment, competitive dynamics, or human-mediated introduction are not. Where temperatures approach the lower thermal threshold, occurrence records can diverge substantially from climate predictions, as documented for example in Mexico City (~2,242 m), where *Ae. aegypti* persists despite conditions near its thermal minimum (Doeurk et al. 2025; Lozano-Fuentes et al. 2012; Dávalos-Becerril et al. 2019; Ortega-Morales et al. 2022).
 - **Photoperiod (*Ae. albopictus*):** The binary |lat| ≥ 23.5° cutoff has been replaced with a sigmoid transition (inflection = 23.5°, k = 0.5), eliminating edge-case artefacts near the tropics boundary (e.g. São Paulo vs. Rio de Janeiro). The inflection point follows the astronomical tropics boundary. The sigmoid produces a ~5° transition zone. The parameters used are not empirically derived from field data and remain a modelling assumption.
