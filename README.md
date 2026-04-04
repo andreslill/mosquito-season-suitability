@@ -8,8 +8,6 @@
 [![Notebook: Pipeline](https://img.shields.io/badge/notebook-pipeline-blueviolet)](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/mosquito_suitability_pipeline.ipynb)
 [![Notebook](https://img.shields.io/badge/notebook-validation-blueviolet)](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
 
-**[Open in Tableau Public](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)**
-
 ---
 
 In 2025, Europe recorded simultaneous locally acquired dengue, chikungunya, and West Nile virus transmission for the first time (Simonin 2025; ECDC 2025). *Ae. albopictus* has rapidly expanded into temperate regions over recent decades (Bonizzoni et al. 2013), shifting the key question from **where** climate is suitable to **when** seasonal conditions favour mosquito activity. This project models those seasonal suitability windows for *Ae. aegypti* and *Ae. albopictus* across 1,421 cities worldwide using 1991–2020 climate normals.
@@ -25,6 +23,8 @@ Which months are most suitable for mosquito activity, given a city's typical cli
 ---
 
 ## Dashboard Preview
+
+**[Open in Tableau Public](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)**
 
 [![Dashboard screenshot showing seasonal suitability for Mexico City, Ae. albopictus](./assets/dashboard_screenshot.png)](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)
 *Screenshot of the Tableau Public dashboard showing Mexico City (Ae. albopictus, Moderate threshold). Select any city and species to explore seasonal suitability, climate drivers, and regional comparisons.*
