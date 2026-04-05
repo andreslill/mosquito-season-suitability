@@ -180,7 +180,7 @@ across the continent (Simonin 2025).
 
 ---
 
-## Limitations & Next Iterations
+## Limitations
 
 - **Climate normals (1991–2020):** Recent warming trends may shift actual suitability windows. Comparing 1991–2020 vs. 2001–2030 normals would show whether recent warming has already shifted season boundaries. The 2001–2030 WMO reference period will not be fully available until around 2031. A shorter period such as 2011–2024 would reduce comparability because of unequal period length, while 2001–2024 overlaps with the current baseline by 20 years and would likely limit detection of a meaningful shift.
 - **Interannual variability:** Suitability scores are derived from 30-year monthly climate normals, which represent average conditions and smooth out year-to-year variability. Anomalous years such as an unusually wet August in an otherwise dry city or an exceptionally warm spring are not captured. The model describes structural seasonal suitability, not the outbreak-relevant variability that drives actual population surges in specific years.
@@ -192,6 +192,8 @@ across the continent (Simonin 2025).
 - **Photoperiod (*Ae. albopictus*):** The binary |lat| ≥ 23.5° cutoff has been replaced with a sigmoid transition (inflection = 23.5°, k = 0.5), eliminating edge-case artefacts near the tropics boundary (e.g. São Paulo vs. Rio de Janeiro). The inflection point follows the astronomical tropics boundary. The sigmoid produces a ~5° transition zone. The parameters used are not empirically derived from field data and remain a modelling assumption.
 - **Species-specific temperature parameters:** All thermal thresholds (Tmin, Topt, Tmax) for both species were taken from Doeurk et al. (2025), who fitted a quadratic survival model to Cambodian field populations and reported explicit threshold values that can be directly mapped to a triangular suitability curve. This source was preferred over Schmidt et al. (2018), whose Cox regression approach provides relative hazard estimates rather than absolute thermal thresholds. For *Ae. albopictus*, the resulting Topt of 24.5 °C is approximately 3 °C higher than the 21.5 °C reported by Schmidt et al. (2018) from a pooled analysis of globally diverse laboratory strains. This difference may reflect local thermal adaptation in tropical populations as well as differences in study design and strain composition.
 - **Presence data:** Suitability scores have been validated against occurrence records from Kraemer et al. (2015), consistent with the methodology described in the Model Validation section. Further comparison against the Mosquito Alert citizen science platform or the VectorMap database (Laporta et al. 2023) could extend coverage, particularly for post-2014 records.
+
+## Next Iterations
 - **Virus-specific transmission modelling:** This work models general climate suitability for mosquito activity. A natural extension would be to incorporate virus-specific temperature–trait relationships (EIP, vector competence) to estimate transmission risk for specific arboviruses, as demonstrated for chikungunya by Tegar et al. (2026) and for dengue/Zika by Mordecai et al. (2017).
 - **From suitability to outbreak forecasting:** Integrating confirmed case data would add a predictive layer on top of suitability scores, an approach demonstrated at country level by Sebastianelli et al. (2024) for dengue in Brazil and Peru ([ESA-PhiLab/ESA-UNICEF_DengueForecastProject](https://github.com/ESA-PhiLab/ESA-UNICEF_DengueForecastProject)).
 
