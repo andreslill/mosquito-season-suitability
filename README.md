@@ -95,7 +95,7 @@ Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](
 │   └── kraemer_occurrences.csv               # Pre-processed from Kraemer et al. (2015); used for validation
 ├── notebooks/
 │   ├── mosquito_suitability_pipeline.ipynb   # ERA5 data pipeline and suitability model
-│   └── methodology_and_validation.ipynb      # External validation against Kraemer et al. (2015)
+│   └── methodology_and_validation.ipynb      # Validation, discussion, and model limitations
 ├── .gitattributes
 ├── requirements.txt
 └── README.md
