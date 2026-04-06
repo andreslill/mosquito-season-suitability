@@ -79,7 +79,7 @@ Suitability scores were compared against occurrence records from Kraemer et al. 
 | *Ae. albopictus* | Season length (≥ 0.4) | 12 months | 4 months | 0.747 |
 
 All Mann-Whitney U tests: p < 0.001. 
-Full methodology and validation code: [`notebooks/methodology_and_validation.ipynb`](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
+Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
 
 ---
 
