@@ -78,7 +78,8 @@ Suitability scores were compared against occurrence records from Kraemer et al. 
 | *Ae. albopictus* | Season length (≥ 0.3) | 12 months | 5 months | 0.730 |
 | *Ae. albopictus* | Season length (≥ 0.4) | 12 months | 4 months | 0.747 |
 
-All Mann-Whitney U tests: p < 0.001. Full methodology and validation code: `notebooks/methodology_and_validation.ipynb`
+All Mann-Whitney U tests: p < 0.001. 
+Full methodology and validation code: [`notebooks/methodology_and_validation.ipynb`](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)Sonnet 4.6Claude ist eine KI und kann Fehler machen. Bitte überprüfe die Antworten.Methodology and validation · IPYNBKopieren
 
 ---
 
