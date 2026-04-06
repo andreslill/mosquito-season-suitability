@@ -5,8 +5,9 @@
 
 [![Dashboard](https://img.shields.io/badge/dashboard-Tableau%20Public-orange.svg)](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard)
 [![Data](https://img.shields.io/badge/data-ERA5%201991–2020-green)](https://github.com/andreslill/mosquito-season-suitability/blob/main/data/mosquito_suitability.csv)
-[![nbviewer](https://github/andreslill/mosquito-season-suitability/blob/main/notebooks/mosquito_suitability_pipeline.ipynb)
-[![nbviewer](https://github/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
+[![nbviewer](https://img.shields.io/badge/notebook-pipeline-blueviolet)](https://nbviewer.org/github/andreslill/mosquito-season-suitability/blob/main/notebooks/mosquito_suitability_pipeline.ipynb)
+[![nbviewer](https://img.shields.io/badge/notebook-validation-blueviolet)](https://nbviewer.org/github/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
+
 
 ---
 
