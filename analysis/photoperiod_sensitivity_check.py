@@ -28,7 +28,12 @@ df = pd.read_csv("mosquito_suitability.csv")
 MONTHS_NORTH_WINTER = [11, 12, 1, 2]
 MONTHS_SOUTH_WINTER = [5, 6, 7, 8]
 
-# ── 2. BINARY PHOTO FACTOR (current logic) ───────────────────────────────────
+# Temporal discretisation via fixed winter months introduces step changes
+# at month boundaries (e.g. Feb → Mar). A continuous daylength model based
+# on day-of-year and latitude would remove this artefact but exceeds the
+# temporal resolution of the ERA5 monthly climate normals used here.
+
+# ── 2. BINARY PHOTO FACTOR (original binary cutoff) ───────────────────────────────────
 def photo_factor_binary(lat, month, min_val=0.0):
     abs_lat = abs(lat)
     is_n_winter = (lat >= 0) and (month in MONTHS_NORTH_WINTER)
@@ -39,13 +44,19 @@ def photo_factor_binary(lat, month, min_val=0.0):
 
 # ── 3. SIGMOID PHOTO FACTOR (new logic) ──────────────────────────────────────
 def photo_factor_sigmoid(lat, month, k=0.5, inflection=23.5, min_val=0.0):
+
+    # k=0.5 gives a transition width of ~8.8° latitude (0.1 → 0.9),
+    # roughly the span from Barcelona to Paris. This is a modelling
+    # choice intended to reflect the gradual latitudinal adaptation of
+    # temperate Ae. albopictus populations described in Bonizzoni et al. (2013).
+
     abs_lat = abs(lat)
     is_n_winter = (lat >= 0) and (month in MONTHS_NORTH_WINTER)
     is_s_winter = (lat < 0)  and (month in MONTHS_SOUTH_WINTER)
     if not (is_n_winter or is_s_winter):
         return 1.0
     reduction = 1.0 / (1.0 + np.exp(-k * (abs_lat - inflection)))
-    return round(1.0 - (1.0 - min_val) * reduction, 4)
+    return 1.0 - (1.0 - min_val) * reduction
 
 # ── 4. APPLY BOTH ─────────────────────────────────────────────────────────────
 df["photo_binary"]  = df.apply(lambda r: photo_factor_binary(r["lat"], r["month"]), axis=1)
