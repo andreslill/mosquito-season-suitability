@@ -73,12 +73,12 @@ Suitability scores were compared against occurrence records from Kraemer et al. 
 
 | Species | Metric | Presence median | Absence-labelled median | AUC |
 |---|---|---|---|---|
-| *Ae. aegypti* | Season length (≥ 0.2) | 12 months | 6 months | **0.834** |
-| *Ae. aegypti* | Season length (≥ 0.3) | 12 months | 5 months | 0.827 |
-| *Ae. aegypti* | Season length (≥ 0.4) | 12 months | 5 months | 0.815 |
-| *Ae. albopictus* | Season length (≥ 0.2) | 12 months | 6 months | **0.743** |
-| *Ae. albopictus* | Season length (≥ 0.3) | 12 months | 5 months | 0.730 |
-| *Ae. albopictus* | Season length (≥ 0.4) | 12 months | 4 months | 0.747 |
+| *Ae. aegypti* | Season length (Early, ≥ 0.2) | 12 months | 6 months | **0.834** |
+| *Ae. aegypti* | Season length (Moderate, ≥ 0.3) | 12 months | 5 months | 0.827 |
+| *Ae. aegypti* | Season length (Strict, ≥ 0.4) | 12 months | 5 months | 0.815 |
+| *Ae. albopictus* | Season length (Early, ≥ 0.2) | 12 months | 6 months | **0.743** |
+| *Ae. albopictus* | Season length (Moderate, ≥ 0.3) | 12 months | 5 months | 0.730 |
+| *Ae. albopictus* | Season length (Strict, ≥ 0.4) | 12 months | 4 months | 0.747 |
 
 All Mann-Whitney U tests: p < 0.001. 
 Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
