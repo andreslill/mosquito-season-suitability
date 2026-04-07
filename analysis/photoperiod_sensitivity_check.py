@@ -50,6 +50,11 @@ def photo_factor_sigmoid(lat, month, k=0.5, inflection=23.5, min_val=0.0):
     # choice intended to reflect the gradual latitudinal adaptation of
     # temperate Ae. albopictus populations described in Bonizzoni et al. (2013).
 
+    # Note: k=0.5 and inflection=23.5 are uniform across all latitudes.
+    # Urbanski et al. (2012) show CPP varies clinally across ~15° latitude
+    # in Ae. albopictus. A latitude-dependent inflection point would
+    # better reflect this regional adaptation.
+
     abs_lat = abs(lat)
     is_n_winter = (lat >= 0) and (month in MONTHS_NORTH_WINTER)
     is_s_winter = (lat < 0)  and (month in MONTHS_SOUTH_WINTER)
