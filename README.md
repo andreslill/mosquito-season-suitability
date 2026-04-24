@@ -98,7 +98,6 @@ Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](
 ├── notebooks/
 │   ├── mosquito_suitability_pipeline.ipynb   # ERA5 data pipeline and suitability model
 │   ├── methodology_and_validation.ipynb      # Validation, discussion, and model limitations
-│   └── photoperiod_parameter_selection.ipynb # CPP parameter selection and decision log
 ├── .gitattributes
 ├── requirements.txt
 └── README.md
