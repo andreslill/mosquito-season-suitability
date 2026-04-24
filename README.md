@@ -1,9 +1,9 @@
 # When is mosquito season in your city?
-### Climate suitability for *Ae. aegypti* and *Ae. albopictus* across 1,421 cities worldwide
+### Climate suitability for *Ae. aegypti* and *Ae. albopictus* across 1,423 cities worldwide
 
 > **Tableau Public dashboard** · **ERA5 climate data** · **1991–2020 climate normals**
 
-[![Dashboard](https://img.shields.io/badge/dashboard-Tableau%20Public-orange.svg)](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard)
+[![Dashboard](https://img.shields.io/badge/dashboard-Tableau%20Public-orange.svg)](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity_v2/Whenismosquitoseasoninyourcity?publish=yes)
 [![Data](https://img.shields.io/badge/data-ERA5%201991–2020-green)](https://github.com/andreslill/mosquito-season-suitability/blob/main/data/mosquito_suitability.csv)
 [![Notebook: Pipeline](https://img.shields.io/badge/notebook-pipeline-blueviolet)](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/mosquito_suitability_pipeline.ipynb)
 [![Notebook](https://img.shields.io/badge/notebook-validation-blueviolet)](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
@@ -11,7 +11,7 @@
 
 ---
 
-In 2025, Europe recorded simultaneous locally acquired dengue, chikungunya, and West Nile virus transmission for the first time (Simonin 2025; ECDC 2025). *Ae. albopictus* has rapidly expanded into temperate regions over recent decades (Bonizzoni et al. 2013), shifting the key question from **where** climate is suitable to **when** seasonal conditions favour mosquito activity. This project models those seasonal suitability windows for *Ae. aegypti* and *Ae. albopictus* across 1,421 cities worldwide using 1991–2020 climate normals.
+In 2025, Europe recorded simultaneous locally acquired dengue, chikungunya, and West Nile virus transmission for the first time (Simonin 2025; ECDC 2025). *Ae. albopictus* has rapidly expanded into temperate regions over recent decades (Bonizzoni et al. 2013), shifting the key question from **where** climate is suitable to **when** seasonal conditions favour mosquito activity. These seasonal suitability windows for *Ae. aegypti* and *Ae. albopictus* are modelled across 1,423 cities worldwide using 1991–2020 climate normals.
 
 **Important:** Scores represent *climate suitability only*, not confirmed mosquito presence, disease risk, or actual population abundance. City level elevation is included as contextual information. Elevation differences within cities, microclimates, urban heat islands, and local habitat availability are not captured.
 
@@ -19,8 +19,8 @@ In 2025, Europe recorded simultaneous locally acquired dengue, chikungunya, and 
 
 ## Dashboard Preview
 
-[![Dashboard screenshot showing seasonal suitability for Mexico City, Ae. albopictus](./assets/dashboard_screenshot.png)](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity/Dashboard?publish=yes)
-*Screenshot of the Tableau Public dashboard showing Mexico City (Ae. albopictus, Moderate threshold). Select any city and species to explore seasonal suitability, and regional comparisons.*
+[![Dashboard screenshot showing seasonal suitability for Madrid, Spain, Ae. albopictus](./assets/dashboard_screenshot.png)](https://public.tableau.com/app/profile/andr.s.lill8311/viz/Whenismosquitoseasoninyourcity_v2/Whenismosquitoseasoninyourcity?publish=yes)
+*Screenshot of the Tableau Public dashboard showing Madrid, Spain (Ae. albopictus, Moderate threshold). Select any city and species to explore seasonal suitability, and regional comparisons.*
 
 ---
 
@@ -49,8 +49,7 @@ Parameters from Doeurk et al. 2025 (female adult survival):
 Linear from 1.0 (VPD ≤ 1.0 kPa) to 0.0 (VPD ≥ 3.0 kPa), following Schmidt et al. 2018. VPD derived from ERA5 temperature and dewpoint via the Magnus approximation.
 
 ### Photoperiod (PhotoFactor • *Ae. albopictus* only)
-A sigmoid function (inflection = 23.5°, k = 0.5) weights the Lacour et al. 2015 photoperiod thresholds (11.25 h / 13.5 h) continuously by latitude, producing a 
-~5° transition zone around the Tropic of Cancer/Capricorn. PhotoFactor approaches 1.0 near the equator and 0.0 at high latitudes in winter.
+A two-stage continuous model. First, a sigmoid latitude weight (inflection = 23.5°, k = 0.5) determines how strongly photoperiod modulates suitability at a given latitude, approaching 0 near the equator and 1 at high latitudes. Second, a logistic photoperiod response (steepness = 8.0) is centred on a latitude-dependent critical photoperiod (CPP), interpolated linearly from 12.3 h at 25° (Xia et al. 2018) to 13.5 h at 40° (Lacour et al. 2015). The two stages are blended so that PhotoFactor approaches 1.0 near the equator and 0.0 at high latitudes in winter.
 
 ### Precipitation
 Precipitation is shown as contextual information only and does not contribute to the suitability score. 
@@ -71,14 +70,14 @@ Precipitation is shown as contextual information only and does not contribute to
 
 Suitability scores were compared against occurrence records from Kraemer et al. (2015), a global compendium of 42,066 Ae. aegypti and Ae. albopictus records. Cities with confirmed records within 50 km showed systematically higher suitability than absence-labelled cities. Season length was the strongest discriminator:
 
-| Species | Metric | Presence median | Absence-labelled median | AUC |
-|---|---|---|---|---|
-| *Ae. aegypti* | Season length (Early, ≥ 0.2) | 12 months | 6 months | **0.834** |
-| *Ae. aegypti* | Season length (Moderate, ≥ 0.3) | 12 months | 5 months | 0.827 |
-| *Ae. aegypti* | Season length (Strict, ≥ 0.4) | 12 months | 5 months | 0.815 |
-| *Ae. albopictus* | Season length (Early, ≥ 0.2) | 12 months | 6 months | **0.743** |
-| *Ae. albopictus* | Season length (Moderate, ≥ 0.3) | 12 months | 5 months | 0.730 |
-| *Ae. albopictus* | Season length (Strict, ≥ 0.4) | 12 months | 4 months | 0.747 |
+| Species | Metric | Presence median | Absence-labelled median | AUC | 95% CI |
+|---|---|---|---|---|---|
+| *Ae. aegypti* | Season length (Early, ≥ 0.2) | 12 months | 6 months | **0.834** | 0.80–0.87 |
+| *Ae. aegypti* | Season length (Moderate, ≥ 0.3) | 12 months | 5 months | 0.827 | 0.78–0.87 |
+| *Ae. aegypti* | Season length (Strict, ≥ 0.4) | 12 months | 5 months | 0.815 | 0.76–0.87 |
+| *Ae. albopictus* | Season length (Early, ≥ 0.2) | 12 months | 6 months | **0.743** | 0.64–0.83 |
+| *Ae. albopictus* | Season length (Moderate, ≥ 0.3) | 12 months | 5 months | 0.730 | 0.62–0.83 |
+| *Ae. albopictus* | Season length (Strict, ≥ 0.4) | 12 months | 4 months | 0.747 | 0.64–0.84 |
 
 All Mann-Whitney U tests: p < 0.001. 
 Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](https://github.com/andreslill/mosquito-season-suitability/blob/main/notebooks/methodology_and_validation.ipynb)
@@ -93,12 +92,13 @@ Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](
 ├── assets/
 │   └── dashboard_screenshot.png  
 ├── data/
-│   └── mosquito_suitability.csv              # Pre-computed dataset (1,421 cities × 12 months)
-│   └── kraemer_occurrences.csv               # Pre-processed from Kraemer et al. (2015); used for validation
+│   ├── mosquito_suitability.csv              # Pre-computed dataset (1,423 cities × 12 months)
+│   ├── kraemer_occurrences.csv               # Pre-processed from Kraemer et al. (2015); used for validation
 │   └── worldcities.csv                       # Input city reference dataset from the SimpleMaps Basic World Cities Database (CC BY 4.0)
 ├── notebooks/
 │   ├── mosquito_suitability_pipeline.ipynb   # ERA5 data pipeline and suitability model
-│   └── methodology_and_validation.ipynb      # Validation, discussion, and model limitations
+│   ├── methodology_and_validation.ipynb      # Validation, discussion, and model limitations
+│   └── photoperiod_parameter_selection.ipynb # CPP parameter selection and decision log
 ├── .gitattributes
 ├── requirements.txt
 └── README.md
@@ -141,6 +141,10 @@ The processed output (mosquito_suitability.csv) is included in the repository. R
 >Schmidt CA, et al. Effects of desiccation stress on adult female longevity in *Ae. aegypti* and *Ae. albopictus*. Parasites & Vectors 2018; 11:267. https://doi.org/10.1186/s13071-018-2808-6
 
 >Simonin Y. Europe Faces Multiple Arboviral Threats in 2025. Viruses 2025; 17:1642. https://doi.org/10.3390/v17121642
+
+>Urbanski J, et al. Rapid adaptive evolution of photoperiodic response during invasion and range expansion across a climatic gradient. Am Nat. 2012; 179(4):490–500. https://doi.org/10.1086/664709
+
+>Xia D, et al. Photoperiodic diapause in a subtropical population of *Aedes albopictus* in Guangzhou, China: optimized field-laboratory-based study and statistical models for comprehensive characterization. Infect Dis Poverty 2018; 7:89. https://doi.org/10.1186/s40249-018-0466-8
 
 ---
 
