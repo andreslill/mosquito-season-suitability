@@ -1,9 +1,10 @@
-# Mosquito Climate Suitability — ERA5 Pipeline
+# Mosquito Climate Suitability: ERA5 Pipeline
 # Python dependencies
 # Install with: pip install -r requirements.txt
 
 # Data retrieval
 cdsapi>=0.7.0
+requests>=2.31.0
 
 # Data processing
 numpy>=1.24.0
