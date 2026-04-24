@@ -99,7 +99,6 @@ Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](
 │   ├── season_distribution_wide.csv                     # Season length distribution, wide format, Moderate threshold
 │   ├── species_difference_map.csv                       # Season length divergence between species by city
 │   ├── summary_statistics.csv                           # Global KPIs and summary statistics
-│   ├── insight_annotations.csv                          # Analytical findings and annotations
 │   ├── city_insights_extended.csv                       # City-level flags and story tags
 │   ├── kraemer_occurrences.csv                          # Pre-processed from Kraemer et al. (2015); used for validation
 │   └── worldcities.csv                                  # Input city list (SimpleMaps Basic, CC BY 4.0)
