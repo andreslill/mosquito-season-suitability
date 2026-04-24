@@ -1,0 +1,25 @@
+species,peak_month,city_count,month_name
+Ae. aegypti,1,45,Jan
+Ae. aegypti,2,50,Feb
+Ae. aegypti,3,27,Mar
+Ae. aegypti,4,42,Apr
+Ae. aegypti,5,92,May
+Ae. aegypti,6,127,Jun
+Ae. aegypti,7,402,Jul
+Ae. aegypti,8,338,Aug
+Ae. aegypti,9,128,Sep
+Ae. aegypti,10,83,Oct
+Ae. aegypti,11,57,Nov
+Ae. aegypti,12,32,Dec
+Ae. albopictus,1,77,Jan
+Ae. albopictus,2,47,Feb
+Ae. albopictus,3,13,Mar
+Ae. albopictus,4,86,Apr
+Ae. albopictus,5,181,May
+Ae. albopictus,6,280,Jun
+Ae. albopictus,7,449,Jul
+Ae. albopictus,8,181,Aug
+Ae. albopictus,9,18,Sep
+Ae. albopictus,10,20,Oct
+Ae. albopictus,11,40,Nov
+Ae. albopictus,12,31,Dec
