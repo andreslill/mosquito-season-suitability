@@ -68,7 +68,7 @@ Precipitation is shown as contextual information only and does not contribute to
 
 ## Model Validation
 
-Suitability scores were compared against occurrence records from Kraemer et al. (2015), a global compendium of 42,066 Ae. aegypti and Ae. albopictus records. Cities with confirmed records within 50 km showed systematically higher suitability than absence-labelled cities. Season length was the strongest discriminator:
+Suitability scores were compared against occurrence records from Kraemer et al. (2015), a global compendium of 42,066 *Ae. aegypti* and *Ae. albopictus* records. Cities with confirmed records within 50 km showed systematically higher suitability than absence-labelled cities. Season length was the strongest discriminator:
 
 | Species | Metric | Presence median | Absence-labelled median | AUC | 95% CI |
 |---|---|---|---|---|---|
