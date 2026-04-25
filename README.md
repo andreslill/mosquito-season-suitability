@@ -88,7 +88,7 @@ Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](
 
 ```
 ├── analysis/
-│   └── photoperiod_sensitivity_check.py               # Sigmoid vs. binary cutoff sensitivity check
+│   └── photoperiod_sensitivity_check.py                 # Sigmoid vs. binary cutoff sensitivity check
 ├── assets/
 │   └── dashboard_screenshot.png
 ├── data/
