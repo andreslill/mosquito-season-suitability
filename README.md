@@ -88,29 +88,19 @@ Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](
 
 ```
 ├── analysis/
-│   └── photoperiod_sensitivity_check.py                 # Sigmoid vs. binary cutoff sensitivity check
+│   └── photoperiod_sensitivity_check.py      # Sigmoid vs. binary cutoff sensitivity check
 ├── assets/
-│   └── dashboard_screenshot.png
+│   └── dashboard_screenshot.png  
 ├── data/
-│   ├── mosquito_suitability.csv                         # Main dataset: ERA5 suitability scores (1,423 cities × 12 months)
-│   ├── mosquito_suitability_delta.csv                   # Season length change: 1961–1990 vs. 1991–2020
-│   ├── mosquito_suitability_latitude_aggregation.csv    # Season length aggregated by latitude band
-│   ├── peak_month_distribution.csv                      # Peak suitability month counts by species
-│   ├── season_distribution_wide.csv                     # Season length distribution, wide format, Moderate threshold
-│   ├── species_difference_map.csv                       # Season length divergence between species by city
-│   ├── summary_statistics.csv                           # Global KPIs and summary statistics
-│   ├── city_insights_extended.csv                       # City-level flags and story tags
-│   ├── kraemer_occurrences.csv                          # Pre-processed from Kraemer et al. (2015); used for validation
-│   └── worldcities.csv                                  # Input city list (SimpleMaps Basic, CC BY 4.0)
+│   ├── mosquito_suitability.csv              # Pre-computed dataset (1,423 cities × 12 months)
+│   ├── mosquito_suitability_delta.csv        # Season length change: 1961–1990 vs. 1991–2020
+│   ├── kraemer_occurrences.csv               # Pre-processed from Kraemer et al. (2015); used for validation
+│   └── worldcities.csv                       # Input city reference dataset from the SimpleMaps Basic World Cities Database (CC BY 4.0)
 ├── notebooks/
-│   ├── mosquito_suitability_pipeline.ipynb              # ERA5 data pipeline and suitability model
-│   ├── mosquito_climate_change_delta.ipynb              # Climate change delta analysis (1961–1990 vs. 1991–2020)
-│   ├── mosquito_suitability_latitude_aggregation.ipynb  # Aggregation by latitude band
-│   ├── peak_month_distribution.ipynb                    # Peak month distribution by species
-│   ├── season_distribution_reshape.ipynb                # Season length distribution reshape
-│   ├── species_difference_map.ipynb                     # Species season length divergence by city
-│   ├── mosquito_dashboard_insights.ipynb                # Summary statistics, annotations, and city flags
-│   └── methodology_and_validation.ipynb                 # Validation, discussion, and model limitations
+│   ├── mosquito_suitability_pipeline.ipynb   # ERA5 data pipeline and suitability model
+│   ├── mosquito_climate_change_delta.ipynb   # Climate change delta analysis (1961–1990 vs. 1991–2020)
+│   ├── methodology_and_validation.ipynb      # Validation, discussion, and model limitations
+│   └── photoperiod_parameter_selection.ipynb # CPP parameter selection and decision log
 ├── .gitattributes
 ├── requirements.txt
 └── README.md
