@@ -11,9 +11,9 @@
 
 ---
 
-In 2025, Europe recorded simultaneous locally acquired dengue, chikungunya, and West Nile virus transmission for the first time (Simonin 2025; ECDC 2025). *Ae. albopictus* has rapidly expanded into temperate regions over recent decades (Bonizzoni et al. 2013), shifting the key question from **where** climate is suitable to **when** seasonal conditions favour mosquito activity. These seasonal suitability windows for *Ae. aegypti* and *Ae. albopictus* are modelled across 1,423 cities worldwide using 1991–2020 climate normals.
+This project models when monthly climate conditions favour activity of *Ae. aegypti* and *Ae. albopictus* across 1,423 cities worldwide, using ERA5 1991–2020 climate normals. For each city, the model estimates how many months per year temperature, vapour pressure deficit, and photoperiod are simultaneously favourable, and which month peaks. As *Ae. albopictus* has expanded into temperate regions over recent decades, the question shifts from **where** climate is suitable to **when** seasonal conditions are favourable.
 
-**Important:** Scores represent *climate suitability only*, not confirmed mosquito presence, disease risk, or actual population abundance. City level elevation is included as contextual information. Elevation differences within cities, microclimates, urban heat islands, and local habitat availability are not captured.
+**Important:** Scores represent *climate suitability only*, not confirmed mosquito presence, disease risk, or actual population abundance.
 
 ---
 
