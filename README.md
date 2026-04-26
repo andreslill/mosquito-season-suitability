@@ -101,7 +101,6 @@ Full methodology and validation: [`notebooks/methodology_and_validation.ipynb`](
 │   ├── mosquito_climate_change_delta.ipynb   # Climate change delta analysis (1961–1990 vs. 1991–2020)
 │   ├── methodology_and_validation.ipynb      # Validation, discussion, and model limitations
 │   └── photoperiod_parameter_selection.ipynb # CPP parameter selection and decision log
-├── .gitattributes
 ├── requirements.txt
 └── README.md
 ```
