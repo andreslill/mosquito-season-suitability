@@ -11,7 +11,7 @@
 
 ---
 
-This project models when monthly climate conditions favour activity of *Ae. aegypti* and *Ae. albopictus* across 1,423 cities worldwide, using ERA5 1991–2020 climate normals. For each city, the model estimates how many months per year temperature, vapour pressure deficit, and photoperiod are simultaneously favourable, and which month peaks. As *Ae. albopictus* has expanded into temperate regions over recent decades, the question shifts from **where** climate is suitable to **when** seasonal conditions are favourable.
+This project models when monthly climate conditions favour activity of *Ae. aegypti* and *Ae. albopictus* across 1,423 cities worldwide, using ERA5 1991–2020 climate normals. For each city, the model estimates how many months per year climate conditions are simultaneously favourable, and which month peaks. As *Ae. albopictus* has expanded into temperate regions over recent decades, the question shifts from where climate is suitable to when seasonal conditions are favourable.
 
 **Important:** Scores represent *climate suitability only*, not confirmed mosquito presence, disease risk, or actual population abundance.
 
