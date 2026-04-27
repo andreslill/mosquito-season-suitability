@@ -29,10 +29,10 @@ This project models when monthly climate conditions favour activity of *Ae. aegy
 Suitability is a multiplicative score (0–1):
 
 
-Suitability Score (*Ae. aegypti*)    = TempScore × VPDScore
+Suitability Score (*Ae. aegypti*)    = TempScore × VPDScore. 
 Suitability Score (*Ae. albopictus*) = TempScore × VPDScore × PhotoFactor*
 
-*PhotoFactor = 1.0 within the tropics (|lat| < ~23.5°); decreases continuously at higher latitudes.
+*PhotoFactor = 1.0 within the tropics (|lat| < ~23.5°); decreases continuously at higher latitudes.  
 
 
 ### Temperature suitability (TempScore)
