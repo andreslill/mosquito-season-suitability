@@ -11,7 +11,7 @@
 
 ---
 
-This project models when monthly climate conditions favour activity of *Ae. aegypti* and *Ae. albopictus* across 1,423 cities worldwide, using ERA5 1991–2020 climate normals. For each city, the model estimates how many months per year climate conditions are simultaneously favourable, and which month peaks. As *Ae. albopictus* has expanded into temperate regions over recent decades, the question shifts from where climate is suitable to when seasonal conditions are favourable.
+Using ERA5 1991–2020 climate normals, this model estimates when monthly climate conditions favour activity of *Ae. aegypti* and *Ae. albopictus* across 1,423 cities worldwide. For each city, it estimates the number of months per year in which conditions are simultaneously favourable, and which month peaks. As *Ae. albopictus* has expanded into temperate regions over recent decades, the question shifts from where climate is suitable to when seasonal conditions are favourable..
 
 **Important:** Scores represent *climate suitability only*, not confirmed mosquito presence, disease risk, or actual population abundance.
 
@@ -28,11 +28,12 @@ This project models when monthly climate conditions favour activity of *Ae. aegy
 
 Suitability is a multiplicative score (0–1):
 
-- Suitability Score (Ae. aegypti) = TempScore × VPDScore
+- Suitability Score (*Ae. aegypti*) = TempScore × VPDScore
 
-- Suitability Score (Ae. albopictus) = TempScore × VPDScore × PhotoFactor*
+- Suitability Score (*Ae. albopictus*) = TempScore × VPDScore × PhotoFactor*
 
 *PhotoFactor = 1.0 within the tropics (|lat| < ~23.5°); decreases continuously at higher latitudes.
+
 
 ### Temperature suitability (TempScore)
 Triangular thermal curve: 0 at Tmin/Tmax, 1 at Topt, linear between.
