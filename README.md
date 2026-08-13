@@ -10,7 +10,7 @@
 
 ---
 
-Using ERA5-Land 1991–2020 climate normals, this model estimates when monthly climate conditions favour activity of Ae. aegypti and Ae. albopictus across 1,423 cities worldwide. For each city, it estimates the number of months per year in which conditions are simultaneously favourable, and which month peaks. As Ae. albopictus has expanded into temperate regions over recent decades, the question shifts from where climate is suitable to when seasonal conditions are favourable.
+Using ERA5-Land 1991–2020 climate normals, this model estimates when monthly climate conditions favour activity of *Ae. aegypti* and *Ae. albopictus* across 1,423 cities worldwide. For each city, it estimates the number of months per year in which conditions are simultaneously favourable, and which month peaks. As *Ae. albopictus* has expanded into temperate regions over recent decades, the question shifts from where climate is suitable to when seasonal conditions are favourable.
 
 For *Ae. albopictus*, the final score separates baseline monthly climate suitability from a residual Adult Persistence Tail after critical photoperiod crossing, to better reflect late-season adult activity observed in field studies.
 
